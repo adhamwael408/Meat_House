@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400">
+  <defs>
+    <radialGradient id="bgGrad" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#2E2421"/>
+      <stop offset="100%" stop-color="#140E0C"/>
+    </radialGradient>
+    <linearGradient id="chickenGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F7E6D3"/>
+      <stop offset="50%" stop-color="#EED5BA"/>
+      <stop offset="100%" stop-color="#DDB998"/>
+    </linearGradient>
+    <filter id="glow">
+      <feDropShadow dx="0" dy="6" stdDeviation="12" flood-color="#000" flood-opacity="0.6"/>
+    </filter>
+  </defs>
+  <rect width="600" height="400" fill="url(#bgGrad)"/>
+  
+  <!-- Wooden Board -->
+  <rect x="80" y="240" width="440" height="110" rx="16" fill="#3B261D" stroke="#251610" stroke-width="4" filter="url(#glow)"/>
+  <path d="M 90 270 Q 300 260 510 270" stroke="#4A3125" stroke-width="2" fill="none"/>
+  
+  <!-- Raw Whole Chicken Silhouette Render -->
+  <g transform="translate(180, 110)" filter="url(#glow)">
+    <!-- Main Body -->
+    <path d="M 40 100 C 30 50, 120 20, 180 50 C 230 70, 240 120, 220 150 C 190 190, 80 190, 40 100 Z" fill="url(#chickenGrad)" stroke="#C7A382" stroke-width="2"/>
+    <!-- Leg Drumsticks -->
+    <path d="M 180 130 Q 230 140 250 170 Q 240 185 210 170 Z" fill="#EED5BA" stroke="#C7A382" stroke-width="2"/>
+    <path d="M 160 140 Q 210 160 230 190 Q 215 200 190 180 Z" fill="#E2C6A8" stroke="#C7A382" stroke-width="2"/>
+    <!-- Bone Tips -->
+    <ellipse cx="254" cy="174" rx="8" ry="12" fill="#FAF3EB"/>
+    <ellipse cx="234" cy="194" rx="8" ry="12" fill="#FAF3EB"/>
+    <!-- Wings -->
+    <path d="M 60 110 Q 30 130 50 160 Q 80 140 70 120 Z" fill="#E6CAAD" stroke="#C7A382" stroke-width="1.5"/>
+    <!-- Rosemary & Lemon Accent -->
+    <circle cx="90" cy="170" r="16" fill="#E6C200" opacity="0.9"/>
+    <path d="M 20 180 Q 80 175 140 185" stroke="#2D5A27" stroke-width="4" stroke-linecap="round" fill="none"/>
+  </g>
+
+  <!-- Meat House Packaging Stamp -->
+  <g transform="translate(480, 40) scale(0.6)">
+    <circle cx="50" cy="50" r="45" fill="#9E2A2B" stroke="#D4AF37" stroke-width="3"/>
+    <text x="50" y="42" font-family="sans-serif" font-weight="900" font-size="12" fill="#FFF" text-anchor="middle">MEAT HOUSE</text>
+    <text x="50" y="58" font-family="sans-serif" font-weight="700" font-size="9" fill="#D4AF37" text-anchor="middle">FRESH CHICKEN</text>
+  </g>
+</svg>

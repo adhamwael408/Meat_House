@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400">
+  <defs>
+    <radialGradient id="bgGrad3" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#281E19"/>
+      <stop offset="100%" stop-color="#100A08"/>
+    </radialGradient>
+    <linearGradient id="paneGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E5A93C"/>
+      <stop offset="50%" stop-color="#C6811E"/>
+      <stop offset="100%" stop-color="#9E5D0E"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="400" fill="url(#bgGrad3)"/>
+  
+  <g transform="translate(130, 90)">
+    <!-- Golden Crispy Breaded Cutlet 1 -->
+    <path d="M 60 140 C 40 70, 180 30, 260 70 C 330 110, 310 180, 220 200 C 140 220, 70 190, 60 140 Z" fill="url(#paneGrad)" stroke="#824805" stroke-width="3"/>
+    <!-- Golden Crispy Breaded Cutlet 2 -->
+    <path d="M 140 160 C 120 90, 260 50, 340 90 C 410 130, 390 200, 300 220 C 220 240, 150 210, 140 160 Z" fill="url(#paneGrad)" stroke="#824805" stroke-width="3" opacity="0.95"/>
+    
+    <!-- Crispy Texture Dots -->
+    <circle cx="150" cy="110" r="2" fill="#FFEAA7"/>
+    <circle cx="180" cy="130" r="3" fill="#FFEAA7"/>
+    <circle cx="210" cy="100" r="2.5" fill="#FFEAA7"/>
+    <circle cx="250" cy="140" r="3" fill="#FFEAA7"/>
+    <circle cx="280" cy="120" r="2" fill="#FFEAA7"/>
+    <!-- Lemon Wedge -->
+    <path d="M 70 200 A 30 30 0 0 1 120 220 Z" fill="#F1C40F" stroke="#F39C12" stroke-width="2"/>
+  </g>
+
+  <!-- Meat House Stamp -->
+  <g transform="translate(480, 40) scale(0.6)">
+    <circle cx="50" cy="50" r="45" fill="#9E2A2B" stroke="#D4AF37" stroke-width="3"/>
+    <text x="50" y="42" font-family="sans-serif" font-weight="900" font-size="12" fill="#FFF" text-anchor="middle">MEAT HOUSE</text>
+    <text x="50" y="58" font-family="sans-serif" font-weight="700" font-size="9" fill="#D4AF37" text-anchor="middle">CHICKEN PANE</text>
+  </g>
+</svg>

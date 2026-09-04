@@ -1,0 +1,57 @@
+/* Modern & Minimalist Luxury Butcher Knife Cursor */
+
+/* Hide native cursor only on desktop fine pointer devices */
+@media (pointer: fine) and (min-width: 769px) {
+  body, a, button, input, select, textarea, .clickable, .product-card, .category-card {
+    cursor: none !important;
+  }
+}
+
+/* Custom Cursor Trail Container */
+.custom-cursor-dot {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 22px;
+  height: 22px;
+  pointer-events: none;
+  z-index: 999999;
+  transform: translate(-50%, -50%);
+  transition: transform 0.15s ease-out, opacity 0.2s ease, filter 0.2s ease;
+  opacity: 0;
+  display: none;
+}
+
+@media (pointer: fine) and (min-width: 769px) {
+  .custom-cursor-dot {
+    display: block;
+  }
+}
+
+.custom-cursor-dot.active {
+  opacity: 1;
+}
+
+/* Minimal Sleek Knife Graphic */
+.custom-cursor-svg {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.12s ease-out;
+}
+
+/* Hover state over buttons & cards */
+.custom-cursor-dot.hovering {
+  transform: translate(-50%, -50%) scale(1.35) rotate(-15deg);
+  filter: drop-shadow(0 0 8px rgba(212, 175, 55, 0.8));
+}
+
+/* Click Chopping Animation */
+.custom-cursor-dot.chop {
+  animation: knifeChop 0.22s ease-in-out;
+}
+
+@keyframes knifeChop {
+  0% { transform: translate(-50%, -50%) rotate(0deg) scale(1); }
+  50% { transform: translate(-45%, -35%) rotate(-30deg) scale(1.4); }
+  100% { transform: translate(-50%, -50%) rotate(0deg) scale(1); }
+}

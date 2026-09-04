@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400">
+  <defs>
+    <radialGradient id="bgGrad2" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#241B18"/>
+      <stop offset="100%" stop-color="#120B0A"/>
+    </radialGradient>
+    <linearGradient id="breastGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FCECE1"/>
+      <stop offset="50%" stop-color="#F3D5C3"/>
+      <stop offset="100%" stop-color="#E2B7A0"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="400" fill="url(#bgGrad2)"/>
+  
+  <g transform="translate(140, 80)">
+    <!-- Breast Fillet 1 -->
+    <path d="M 50 160 C 40 80, 160 40, 240 70 C 300 90, 280 170, 200 200 C 120 220, 60 210, 50 160 Z" fill="url(#breastGrad)" stroke="#D89D82" stroke-width="2"/>
+    <!-- Breast Fillet 2 -->
+    <path d="M 120 180 C 110 100, 230 60, 310 90 C 370 110, 350 190, 270 220 C 190 240, 130 230, 120 180 Z" fill="url(#breastGrad)" stroke="#D89D82" stroke-width="2" opacity="0.9"/>
+    
+    <!-- Garlic & Thyme Herbs -->
+    <circle cx="90" cy="210" r="10" fill="#FFF8E7"/>
+    <circle cx="110" cy="225" r="8" fill="#FFF8E7"/>
+    <path d="M 40 190 Q 180 160 320 210" stroke="#3A6B35" stroke-width="3.5" fill="none"/>
+  </g>
+
+  <!-- Meat House Stamp -->
+  <g transform="translate(480, 40) scale(0.6)">
+    <circle cx="50" cy="50" r="45" fill="#9E2A2B" stroke="#D4AF37" stroke-width="3"/>
+    <text x="50" y="42" font-family="sans-serif" font-weight="900" font-size="12" fill="#FFF" text-anchor="middle">MEAT HOUSE</text>
+    <text x="50" y="58" font-family="sans-serif" font-weight="700" font-size="9" fill="#D4AF37" text-anchor="middle">CHICKEN BREAST</text>
+  </g>
+</svg>

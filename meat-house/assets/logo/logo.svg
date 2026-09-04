@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500">
+  <!-- Outer Badge Frame -->
+  <defs>
+    <radialGradient id="badgeBg" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#A5381B"/>
+      <stop offset="100%" stop-color="#70200A"/>
+    </radialGradient>
+    <radialGradient id="darkBadgeBg" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#24110C"/>
+      <stop offset="100%" stop-color="#120704"/>
+    </radialGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000000" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+
+  <!-- Background Circle (Terracotta Red) -->
+  <circle cx="250" cy="250" r="235" fill="url(#badgeBg)" stroke="#1A0A06" stroke-width="12" filter="url(#shadow)"/>
+  <circle cx="250" cy="250" r="218" fill="none" stroke="#1A0A06" stroke-width="3"/>
+  <circle cx="250" cy="250" r="212" fill="none" stroke="#E59B7D" stroke-width="1.5" stroke-dasharray="4,4"/>
+
+  <!-- Curved Text Top: THE BUTCHER'S -->
+  <path id="textArcTop" d="M 90,250 A 160,160 0 0,1 410,250" fill="none" />
+  <text font-family="'Outfit', 'Montserrat', sans-serif" font-weight="900" font-size="28" fill="#1A0A06" letter-spacing="4">
+    <textPath href="#textArcTop" startOffset="50%" text-anchor="middle">
+      THE BUTCHER'S
+    </textPath>
+  </text>
+
+  <!-- Central Bull Silhouette -->
+  <g transform="translate(145, 120) scale(0.85)">
+    <!-- Grass Base -->
+    <path d="M 10 155 Q 125 150 240 155 L 245 160 L 5 160 Z" fill="#1A0A06"/>
+    <!-- Bull Body Silhouette -->
+    <path d="M 40 150 C 35 140 38 115 45 105 C 50 95 60 90 70 85 C 75 70 85 50 100 45 C 108 42 115 48 120 55 C 135 52 160 50 180 58 C 190 62 195 72 205 80 C 215 88 225 92 230 105 C 233 115 228 125 225 140 C 223 150 218 153 212 153 L 202 110 C 198 108 192 112 190 120 L 185 152 L 172 152 L 175 118 L 165 118 L 155 152 L 140 152 L 142 120 L 130 120 L 120 152 C 110 152 90 152 75 152 C 70 140 68 130 65 125 L 55 152 Z" fill="#1A0A06"/>
+    <!-- Horns & Head detail -->
+    <path d="M 45 105 C 38 95 30 90 22 92 C 28 82 40 85 50 90 Z" fill="#1A0A06"/>
+    <path d="M 52 95 C 48 80 40 70 32 65 C 40 65 48 75 56 85 Z" fill="#1A0A06"/>
+  </g>
+
+  <!-- Middle Banner Ribbon -->
+  <path d="M 40,240 Q 250,225 460,240 L 470,290 Q 250,305 30,290 Z" fill="#1A0A06" />
+  <path d="M 45,245 Q 250,230 455,245 L 463,285 Q 250,300 37,285 Z" fill="none" stroke="#A5381B" stroke-width="2"/>
+
+  <!-- Banner Text: MEAT HOUSE -->
+  <text x="250" y="278" font-family="'Outfit', 'Cinzel', 'Playfair Display', serif" font-weight="900" font-size="44" fill="#F4EAD4" letter-spacing="6" text-anchor="middle">
+    MEAT HOUSE
+  </text>
+
+  <!-- Bottom Crossed Cleavers Graphic -->
+  <g transform="translate(200, 315) scale(0.55)">
+    <!-- Left Cleaver -->
+    <g transform="rotate(-30 90 90)">
+      <rect x="75" y="10" width="30" height="100" rx="5" fill="#1A0A06"/>
+      <path d="M 20 100 L 130 100 L 130 160 C 130 185 80 185 20 160 Z" fill="#1A0A06"/>
+      <circle cx="110" cy="120" r="6" fill="url(#badgeBg)"/>
+    </g>
+    <!-- Right Cleaver -->
+    <g transform="rotate(30 90 90)">
+      <rect x="75" y="10" width="30" height="100" rx="5" fill="#1A0A06"/>
+      <path d="M 20 100 L 130 100 L 130 160 C 130 185 80 185 20 160 Z" fill="#1A0A06"/>
+      <circle cx="110" cy="120" r="6" fill="url(#badgeBg)"/>
+    </g>
+  </g>
+</svg>
